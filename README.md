@@ -8,9 +8,9 @@ Vi ska bygga ett program för att se länder med sina kod!
 - [x]  Fråga användare att mata in Country kod och spara användare svar i en variabel.
 - [x]  Vi ska hitta ett land som matcher med `Code` som användare angett.
 - [x]  Om Country kod inte  finns i listan ,skickar vi ett meddelande till användare som "Country code not valid " .
-- [ ]  Vi ska fråga användare om Hon/Han / Hen vill fortsätta, om jag så kör vi frågan igen.
-- [ ]  Vi ska lagra användare svar i en variabel (YES or No).
-- [ ]  Om användare matar in ett annat värde och det är inte (Yes eller No ) då ska visa samma fråga om och om igen tills användare mata in rätt värde. bara som string värde.
+- [x]  Vi ska fråga användare om Hon/Han / Hen vill fortsätta, om jag så kör vi frågan igen.
+- [x]  Vi ska lagra användare svar i en variabel (YES or No).
+- [x]  Om användare matar in ett annat värde och det är inte (Yes eller No ) då ska visa samma fråga om och om igen tills användare mata in rätt värde. bara som string värde.
 
 ---
 
