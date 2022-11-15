@@ -31,7 +31,7 @@ namespace OvningListOchDictionary2._0
                     i++;
                     if (country.Code == UCC) {
                         Console.WriteLine("The country code {0} is the code of {1}", country.Code, country.Name);
-                        return;
+                        break;
                     }
 
                     if (i == countries.Count) {
@@ -39,8 +39,13 @@ namespace OvningListOchDictionary2._0
                     }
                 }
 
-                Console.WriteLine("Would you like to try agian?");
-                PlayAgain = Console.ReadLine().ToUpper();
+                while (true)
+                {
+                    Console.WriteLine("Would you like to try agian?");
+                    PlayAgain = Console.ReadLine().ToUpper();
+                    if (PlayAgain == "YES" || PlayAgain == "NO") { break; }
+                }
+
             } while (PlayAgain == "YES" || PlayAgain == "YE");
 
         }
