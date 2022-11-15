@@ -14,5 +14,12 @@ namespace OvningListOchDictionary2._0
         public string Name { get => _name; set => _name = value; }
         public string Code { get => _code; set => _code = value; }
         public string Capital { get => _capital; set => _capital = value; }
+
+        public Country(string Name, string Code, string Capital)
+        {
+            this._name = Name;
+            this._code = Code;
+            this._capital = Capital;
+        }
     }
 }
