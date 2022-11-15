@@ -9,6 +9,7 @@ namespace OvningListOchDictionary2._0
         {
             Console.WriteLine("Hello World!");
             App();
+
         }
 
         public static void App()
@@ -21,6 +22,8 @@ namespace OvningListOchDictionary2._0
             countries.Add(new Country("United States", "US", "Washington"));
             countries.Add(new Country("Spain", "ES", "Madrid"));
             countries.Add(new Country("Japan", "JP", "Tokyo"));
+            
+            string UCC = Console.ReadLine();
 
             foreach (Country country in countries) {
                 if (country.Code == UCC) {
