@@ -13,6 +13,11 @@ namespace OvningListOchDictionary2._0
 
         public static void App()
         {
+            InitCountryList();
+        }
+
+        public static void InitCountryList()
+        {
             List<Country> countries = new List<Country>();
             countries.Add(new Country("Sweden", "SE", "Stockholm"));
             countries.Add(new Country("Denmark", "DE", "Copenhagen"));
