@@ -23,13 +23,19 @@ namespace OvningListOchDictionary2._0
             countries.Add(new Country("Japan", "JP", "Tokyo"));
             do
             {
-                string UCC = Console.ReadLine();
+                string UCC = Console.ReadLine().ToUpper();
+                int i = 0;
 
                 foreach (Country country in countries)
                 {
-                    if (country.Code == UCC)
-                    {
+                    i++;
+                    if (country.Code == UCC) {
                         Console.WriteLine("The country code {0} is the code of {1}", country.Code, country.Name);
+                        return;
+                    }
+
+                    if (i == countries.Count) {
+                        Console.WriteLine("The country code {0} does not match the country list", UCC);
                     }
                 }
 
