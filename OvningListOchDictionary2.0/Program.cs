@@ -11,9 +11,9 @@ namespace OvningListOchDictionary2._0
             App();
         }
 
-        private void App()
+        public static void App()
         {
-            List<Country> countries = new Country();
+            List<Country> countries = new List<Country>();
             countries.Add(new Country());
         }
     }
