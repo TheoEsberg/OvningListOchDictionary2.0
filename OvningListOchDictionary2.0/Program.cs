@@ -22,6 +22,11 @@ namespace OvningListOchDictionary2._0
             countries.Add(new Country("Spain", "ES", "Madrid"));
             countries.Add(new Country("Japan", "JP", "Tokyo"));
 
+            foreach (Country country in countries) {
+                if (country.Code == UCC) {
+                    Console.WriteLine("The country code {0} is the code of {1}", country.Code, country.Name);
+                }
+            }
         }
     }
 }
